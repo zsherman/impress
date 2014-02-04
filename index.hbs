@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! The main content area on the homepage }}
+
+    {{! Each post will be output using this markup }}
+    <div class="post-wrap">
+                <section class="main-section">
+                    <i class="fa fa-bars menu-button" ></i>
+                    <div class="row post">
+    {{#foreach posts}}
+    <div class="post-content">
+    <h1 class="post-title"><a href="{{url}}">{{{title}}}</a></h1>
+    <h4 class="post-date"><i class="fa fa-clock-o"></i>{{{date}}}</h4>
+    <p>{{{content}}}</p>
+    </div>
+
+    {{/foreach}}
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+    </div>
+    </section>
+    </div>

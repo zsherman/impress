@@ -1,0 +1,42 @@
+<aside class="left-off-canvas-menu" id="side-menu">
+    <i class="fa fa-bars side-bar-menu-button" ></i>
+    <a href="{{@blog.url}}"><div class="me"><img src="{{@blog.logo}}" alt="Profile Image" /></div></a>
+    <h2 class="name">{{@blog.title}}</h2>
+    <p>{{@blog.description}}</p>
+      <ul class="off-canvas-list">
+        <li><a class="link" href="{{@blog.url}}"><i class="fa fa-file-text blog-posts"></i>Blog Posts</a></li>
+        <li><a class="link" href="#"><i class="fa fa-bolt projects"></i>Projects</a></li>
+        {{#post}}
+            {{#if author.website}}
+                <li><a class="link" href="{{author.website}}"><i class="fa fa-code website"></i>Website</a></li>
+            {{else}}
+                <!-- Don't include a link -->
+            {{/if}}
+            {{#if author.email}}
+                <li><a class="link" href="mailto://{{author.email}}"><i class="fa fa-inbox email"></i>Email</a></li>
+            {{else}}
+                <!-- Don't include a link -->
+            {{/if}}
+        {{/post}}
+        {{#foreach posts}}
+            {{#if @first}}
+                {{#if author.website}}
+                    <li><a class="link" href="{{author.website}}"><i class="fa fa-code website"></i>Website</a></li>
+                {{else}}
+                    <!-- Don't include a link -->
+                {{/if}}
+                {{#if author.email}}
+                    <li><a class="link" href="mailto://{{author.email}}"><i class="fa fa-inbox email"></i>Email</a></li>
+                {{else}}
+                    <!-- Don't include a link -->
+                {{/if}}
+            {{else}}
+                <!-- Do nothing -->
+            {{/if}}
+        {{/foreach}}
+        <!-- <li><a class="link" href="#"><i class="fa fa-twitter twitter"></i>Twitter</a></li>
+        <li><a class="link" href="#"><i class="fa fa-dribbble dribbble"></i>Dribbble</a></li> -->
+        <!-- <li><a class="link" href="#"><i class="fa fa-code website"></i>Website</a></li> -->
+        <!-- <li><a class="link" href="#"><i class="fa fa-inbox email"></i>Email</a></li> -->
+      </ul>
+</aside>
