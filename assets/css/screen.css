@@ -1123,6 +1123,16 @@ html, body, .container, .off-canvas-wrap, .inner-wrap {
   margin: 0;
 }
 
+/*------------------------------------*\
+    Page.hbs Styles
+\*------------------------------------*/
+
+
+
+/*------------------------------------*\
+    Media Queries
+\*------------------------------------*/
+
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
   /* line 230, sass/screen.scss */
