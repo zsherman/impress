@@ -1,19 +1,12 @@
 # Impress
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+Impress theme for Ghost blogging platform.
 
 ## Copyright & License
 
-Copyright (C) 2014 Ghost Foundation - Released under the MIT License.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+## Instructions
 
 1. Make blog logo your profile picture, should be a .png if possible (TODO, make it work with other file formats).
 2. Set blog name to your name, description to your bio. 
-3. Your website and email info will appear once there is a single post on the blog.
-4. Create a new post called projects, make the url '/projects', and check the "static page" option
+3. Your website and email info will appear once there is a single post on the blog, this is just because of the current limitations of ghost right now.
+4. Create a new post called projects, make the url '/projects', and check the "static page" option. This will ensure that the projects link on the sidebar works. 

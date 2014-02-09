@@ -5,7 +5,7 @@
     <p>{{@blog.description}}</p>
       <ul class="off-canvas-list">
         <li><a class="link" href="{{@blog.url}}"><i class="fa fa-file-text blog-posts"></i>Blog Posts</a></li>
-        <li><a class="link" href="/projects"><i class="fa fa-bolt projects"></i>Projects</a></li>
+        <li><a class="link" href="{{@blog.url}}/projects"><i class="fa fa-bolt projects"></i>Projects</a></li>
         {{#post}}
             {{#if author.website}}
                 <li><a class="link" href="{{author.website}}"><i class="fa fa-code website"></i>Website</a></li>
